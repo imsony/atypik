@@ -1,0 +1,367 @@
+/* 
+1 - global styles
+2 - navigation
+3 - banner
+4 - accueil
+5 - haut potentiel
+6 - entreprises
+7 - 
+*/
+
+/* 1 - global styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+h1 {
+    font-family: GFS Didot;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: GFS Didot;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: GFS Didot;
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-family: GFS Didot;
+    font-size: 1.2rem;
+    font-weight: 1000;
+}
+
+p {
+    font-family: Montserrat;
+}
+/*
+button {
+    padding: 10px 20px;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin-top: 60px;
+}
+*/
+
+button {
+    margin-top: 60px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: .1em .6em;
+    font-weight: bold;  
+    border: none;
+    padding: 1rem;
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    --c: #ffc93c;
+    
+    box-shadow: 0 0 0 .1em inset var(--c); 
+    --_g: linear-gradient(var(--c) 0 0) no-repeat;
+    background: 
+      var(--_g) calc(var(--_p,0%) - 100%) 0%,
+      var(--_g) calc(200% - var(--_p,0%)) 0%,
+      var(--_g) calc(var(--_p,0%) - 100%) 100%,
+      var(--_g) calc(200% - var(--_p,0%)) 100%;
+    background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+    outline-offset: .1em;
+    transition: background-size .4s, background-position 0s .4s;
+  }
+  button:hover {
+    --_p: 100%;
+    transition: background-position .4s, background-size 0s;
+  }
+  button:active {
+    box-shadow: 0 0 9e9q inset #0009; 
+    background-color: var(--c);
+    color: #fff;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  
+  
+
+/* 2 - navigation */
+
+.navlogo img {
+    width: 200px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+    width: 100%;
+    height: 150px;
+}
+
+.nav ul {
+    margin-top: 40px;
+}
+
+.nav li {
+    list-style-type: none;
+    display: inline;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: Montserrat;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav {
+    display:flex;
+    margin-right: 20px;
+}
+
+.nav a:hover {
+    background-color: #ffc93c;
+    transition: 0.5s;
+    padding: 3px;
+    font-weight: 800;
+}
+
+.nav a:active {
+    font-weight: 1000;
+    color: white;
+}
+
+/* 3 - banner */
+
+.banner {
+    background-image: url(./images/zebra5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    padding: 400px 0px;
+}
+
+.banner-title {
+    width: 50%;
+    line-height: 3rem;
+    text-align: center;
+    padding: 3rem;
+    background-color: white;
+    opacity: 0.9;
+}
+
+.banner-entreprises {
+    background-image: url(./images/recrutement2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    padding: 400px 0px;
+}
+
+.banner-hautpotentiel {
+    background-image: url(./images/zebra4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    padding: 400px 0px;
+}
+
+.banner-zebres {
+    background-image: url(./images/zebra7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    padding: 400px 0px;
+}
+
+.banner-contact {
+    background-image: url(./images/lausanne4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    padding: 400px 0px;
+}
+
+/* 4 - accueil  */
+
+.presentation {
+    width: 60%;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 90px;
+}
+
+.presentation-part {
+    margin-top: 60px;
+}
+
+.presentation-part p {
+    margin-top: 10px;
+}
+
+.presentation-part h4 {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffc93c;
+}
+
+/* 5 - haut potentiel */
+
+.hp {
+    width: 60%;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 90px;
+}
+
+.hp h2 {
+    margin-top: 100px;
+}
+
+.hp p {
+    margin-top: 40px;
+}
+
+.hp-skills {
+    display: flex;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.hp-skill {
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color:#ffc93c;
+    padding: 20px;
+}
+
+.hp img {
+    width: 70%;
+    margin-top: 50px;
+}
+
+/* 6 - entreprises */
+
+.services {
+    width: 60%;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.services h2 {
+    margin-top: 100px;   
+}
+
+.services p {
+    margin-top: 40px;
+}
+
+/* 7 - candidats */
+
+.candidats {
+    width: 60%;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.candidat {
+    margin-top: 100px;    
+}
+
+.candidat p {
+    margin-top: 40px;
+}
+
+.candidats img {
+    width: 80%;
+}
+
+/* 8 - contact */
+
+.contact {
+    width: 60%;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.contact h2 {
+    margin-top: 100px;    
+}
+
+.contact img {
+    margin-top: 30px;
+}
+
+.contact p {
+    margin-top: 20px;
+}
+
+/* footer */
+
+.footer {
+    background-color: #ffc93c;
+    margin: 30px;
+    margin-top: 150px;
+}
+
+.footer p {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 2rem;
+}
+
+.footer img {
+    height: 40px;
+    margin-top: 10px;
+}
+
