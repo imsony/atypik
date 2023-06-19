@@ -271,6 +271,12 @@ button {
     background-color: #ffc93c;
 }
 
+@media only screen and (max-width: 500px) {
+    .presentation  {
+        width:80%;
+    }
+}
+
 
 /* 5 - haut potentiel */
 
@@ -310,6 +316,12 @@ button {
     margin-top: 50px;
 }
 
+@media only screen and (max-width: 500px) {
+    .hp  {
+        width:80%;
+    }
+}
+
 /* 6 - entreprises */
 
 .services {
@@ -325,6 +337,12 @@ button {
 
 .services p {
     margin-top: 40px;
+}
+
+@media only screen and (max-width: 500px) {
+    .services  {
+        width:80%;
+    }
 }
 
 /* 7 - candidats */
@@ -346,6 +364,12 @@ button {
 
 .candidats img {
     width: 80%;
+}
+
+@media only screen and (max-width: 500px) {
+    .candidats  {
+        width:80%;
+    }
 }
 
 /* 8 - contact */
